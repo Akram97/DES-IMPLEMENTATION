@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block title %} DES {% endblock %} {% block content
+%}
+<p id="eh">DES ENCRYPTION</p>
+<div id="wrapper">
+  <div class="container">
+    <form class="form-type" , action="/encrypted" , method="POST">
+      <div class="text-fields">
+        <label>Plain text</label>
+        <input type="text" name="plaintext" placeholder="enter plain text" />
+      </div>
+      <div class="text-fields">
+        <label>Key</label>
+        <input type="text" name="key" placeholder="enter the key" />
+        <input type="submit" class="btn" name="value" value="Encrypt" />
+        <input type="reset" class="btn" name="reset" value="Reset" />
+      </div>
+    </form>
+  </div>
+  <a href="/"><button class="btn-back">Back</button></a>
+  <p class="ext">DES works by encrypting groups of 64 message bits, which is the same as 16 hexadecimal numbers. For example, if we take the plaintext message "8787878787878787", and encrypt it with the DES key "0E329232EA6D0D73", we end up with the ciphertext "0000000000000000".</p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+
+    <style>
+      body {
+        background: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/05/shutterstock_407554567.jpg?w=750);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-size: 0.7em;
+        box-sizing: border-box;
+      }
+      .image-div {
+        display: flex;
+        justify-content: center;
+      }
+
+      .mainpage_btn {
+        display: flex;
+        justify-content: center;
+      }
+      .btn {
+        border-radius: 30px;
+        padding: 15px 25px;
+        margin: 10px 0;
+        background-color: aqua;
+
+        font-weight: bold;
+        align-items: center;
+      }
+
+      .btn-back {
+        border-radius: 30px;
+        padding: 15px 150px;
+        margin: 10px 0;
+        background-color: aqua;
+        font-weight: bold;
+        align-items: center;
+      }
+
+      .btn-back:hover {
+        background-color: lightgreen;
+      }
+
+      .btn:hover {
+        background-color: lightgreen;
+      }
+
+      #wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        padding: 20px;
+        /* justify-content: center;
+        align-items: center; */
+      }
+
+      #eh {
+        font-size: 30px;
+
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .text-fields {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+      }
+
+      label {
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        margin: 0 10px;
+      }
+
+      input[type="text"] {
+        padding: 7px;
+        margin: 10px;
+        border: none;
+        border-bottom: 3px solid lightblue;
+      }
+
+      #main-para {
+        font-size: 30px;
+      }
+
+      .result {
+        font-size: 20px;
+        text-align: center;
+        display: inline-block;
+        margin-top: 25vh;
+        /* margin-left: 40vw; */
+        padding: 20px;
+        background-color: whitesmoke;
+        color: black;
+        border-radius: 10px;
+      }
+
+      .result1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      .ext{
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    {% block content %} {% endblock %}
+  </body>
+</html>
